@@ -20,12 +20,12 @@ This project focuses on analyzing the job market for **Data Analysts**, specific
 3. **Market Demand:** There is a significant volume of job postings for "Junior" roles that emphasize academic background and personal projects over years of experience.
 
 ## 📂 Project Structure & Logic Evolution
-* `skills_ranking(v1.0).sql`: **v1.0: Initial Logic (Incorrect Logic)**
-  - *The Issue:* This version had a logical flaw in the Join process, leading to duplicated salary data across all skills. It showed the same average for everything, which was data-inaccurate.
-  - *Lesson:* Always verify the output against the business context.
+* `skills_ranking(v1.0).sql`: **v1.0: Aggregation Error (Incorrect Logic)**
+  - *The Issue:* In this version, I attempted to display salaries alongside skills without using a `GROUP BY` clause or an aggregate function like `AVG()`. 
+  - *The Result:* This led to "Flat Data" where the same average salary was incorrectly repeated for every skill, providing misleading insights.
 
 * `skills_ranking(v2.0).sql`: **v2.0: Logic Fix & Template Creation**
-  - *The Fix:* Corrected the Join and added proper `GROUP BY` and `AVG` functions to get accurate salaries per skill. 
+  - *The Fix:* I implemented proper **Data Aggregation** using `GROUP BY skills` and `ROUND(AVG())`. This correctly calculated the unique average salary for each specific skill. 
   - *Improvement:* Created a structured template for better scalability.
 
 * `skills_ranking(v2.1).sql`: **v2.1: Optimization & Professional Clean-up**
