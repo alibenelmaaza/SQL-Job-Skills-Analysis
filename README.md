@@ -14,6 +14,9 @@ This project focuses on analyzing the job market for **Data Analysts**, specific
 * **Data Cleaning:** Categorizing locations and handling null salary values.
 * **PostgreSQL:** The primary database engine used for analysis.
 
+## 💾 Data Source
+The dataset used in this project is provided by **Luke Barousse** as part of his SQL for Data Analytics course. It contains real-world job posting data, which served as the foundation for my analysis and code optimization practice.
+
 ## 📈 Key Insights
 1. **SQL & Excel:** Remain the fundamental "must-have" skills for any Junior Data Analyst.
 2. **Salary Trends:** Skills like **Python** and **Power BI** often command higher average salaries in remote settings.
